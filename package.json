@@ -1,0 +1,47 @@
+{
+  "name": "waterpin-api",
+  "version": "1.0.0",
+  "description": "API for Waterpin",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js -w models -w server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sekseason",
+  "license": "MIT",
+  "dependencies": {
+    "@mux/mux-node": "^3.3.1",
+    "@sendgrid/mail": "^7.6.0",
+    "aws-sdk": "^2.1012.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.5",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "mysql": "^2.17.1",
+    "node-geocoder": "^3.28.0",
+    "nodemailer": "^6.6.5",
+    "objection": "^1.6.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.7.1",
+    "read-excel-file": "^5.2.25",
+    "stripe": "^8.183.0",
+    "twilio": "^3.74.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "express-swagger-generator": "^1.1.17",
+    "nodemon": "^2.0.15",
+    "swagger-ui-express": "^4.0.7"
+  }
+}

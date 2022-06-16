@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+   node-web:
+     tty: true
+     build:
+        context: .
+        dockerfile: docker/nodejs/Dockerfile
+     ports:
+       - 6001:3000
+     restart: unless-stopped
+     volumes:
+         - ./:/app
